@@ -1,0 +1,77 @@
+==== Organization ====
+
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "url": "http://ornek.com/",
+        "name" : "Örnek Site Adı",
+        "logo" : "http://ornek.com/images/logo.png",
+        "image": "http://ornek.com/logo.png",
+        "telephone": "+90-0850-885-09-19",
+        "contactPoint" : [
+        { "@type" : "ContactPoint", "telephone" : "+90-0850-999-88-77", "contactType" : "customer service" }
+        ],
+        "address":
+        { "@type": "PostalAddress", "addressLocality": "İstanbul", "addressRegion": "TR", "postalCode": "[POSTA KODU BURAYA]", "streetAddress": "AÇIK ADRES BURAYA GELECEK" }
+        ,
+        "sameAs" : [ 
+          "https://www.facebook.com/ornekcom/",
+          "https://twitter.com/ornekcom/",
+          "https://plus.google.com/u/0/[ornekcomgoogleplusId]/posts/",
+          "https://www.pinterest.com/ornekcom/",
+          "https://www.linkedin.com/company/ornekcom/",
+          "https://www.youtube.com/user/ornekcom/",
+          "https://instagram.com/ornekcom/"
+        ]
+    }
+</script>
+
+==== Sitelinks Searchbox ====
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.example.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://query.example.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+==== Product Schema ==== 
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "Executive Anvil",
+  "image": "http://www.example.com/anvil_executive.jpg",
+  "description": "Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height.",
+  "mpn": "925872",
+  "brand": {
+    "@type": "Thing",
+    "name": "ACME"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "89"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "119.99",
+    "priceValidUntil": "2020-11-05",
+    "itemCondition": "http://schema.org/UsedCondition",
+    "availability": "http://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "Executive Objects"
+    }
+  }
+}
+</script>
